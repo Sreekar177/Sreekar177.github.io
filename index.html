@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sai Sreekar Reddy Boyapally - SOC Analyst & Cybersecurity Professional. Interactive portfolio showcasing real-world threat detection and incident response capabilities.">
+    <title>Sai Sreekar Reddy Boyapally | SOC Analyst</title>
+    
+    <!-- Distinctive Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Google Analytics Placeholder -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-content">
+            <div class="loading-text">INITIALIZING_SECURITY_PROTOCOL</div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+            <div class="loading-status">Loading systems...</div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-bracket">[</span>
+                <span class="logo-text">SREEKAR</span>
+                <span class="logo-bracket">]</span>
+            </div>
+            <div class="nav-links">
+                <a href="#home" class="nav-link">home</a>
+                <a href="#terminal" class="nav-link">terminal</a>
+                <a href="#investigations" class="nav-link">cases</a>
+                <a href="#challenge" class="nav-link">challenge</a>
+                <a href="#skills" class="nav-link">arsenal</a>
+                <a href="#contact" class="nav-link">connect</a>
+            </div>
+            <div class="visitor-counter">
+                <span>visitors: </span>
+                <span id="visitorCount">Loading...</span>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <canvas id="matrixCanvas"></canvas>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-status"></span>
+                <span>ACTIVE THREAT HUNTER</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line">SAI SREEKAR REDDY</span>
+                <span class="title-line">BOYAPALLY</span>
+            </h1>
+            <div class="hero-subtitle">
+                <span class="subtitle-bracket">[</span>
+                <span class="typing-role">SOC_ANALYST</span>
+                <span class="subtitle-bracket">]</span>
+            </div>
+            <p class="hero-tagline">
+                I don't just detect threats — I hunt them down, piece together the evidence, 
+                and make sure they never come back.
+            </p>
+            <div class="hero-cta">
+                <a href="#terminal" class="btn btn-primary">
+                    <span>ENTER TERMINAL</span>
+                </a>
+                <a href="#challenge" class="btn btn-secondary">
+                    <span>TRY THE CHALLENGE</span>
+                </a>
+            </div>
+        </div>
+        <div class="scroll-hint">
+            <span>SCROLL TO EXPLORE</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Interactive Terminal -->
+    <section id="terminal" class="terminal-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">[01]</span>
+                <h2 class="section-title">INTERACTIVE TERMINAL</h2>
+                <p class="section-subtitle">Type 'help' to see available commands. Explore my work through the command line.</p>
+            </div>
+            
+            <div class="terminal-wrapper">
+                <div class="terminal-window">
+                    <div class="terminal-header">
+                        <div class="terminal-buttons">
+                            <span class="terminal-button red"></span>
+                            <span class="terminal-button yellow"></span>
+                            <span class="terminal-button green"></span>
+                        </div>
+                        <div class="terminal-title">sreekar@security-ops:~$</div>
+                    </div>
+                    <div class="terminal-body" id="terminalBody">
+                        <div class="terminal-welcome">
+                            <div class="terminal-line">
+                                <span class="terminal-text-success">Welcome to Sreekar's Security Operations Terminal</span>
+                            </div>
+                            <div class="terminal-line">
+                                <span class="terminal-text">Type <span class="terminal-highlight">'help'</span> to see available commands</span>
+                            </div>
+                            <br>
+                        </div>
+                        <div class="terminal-output" id="terminalOutput"></div>
+                        <div class="terminal-input-line">
+                            <span class="terminal-prompt">sreekar@security-ops:~$</span>
+                            <input type="text" class="terminal-input" id="terminalInput" autocomplete="off">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Investigations -->
+    <section id="investigations" class="investigations">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">[02]</span>
+                <h2 class="section-title">CASE INVESTIGATIONS</h2>
+                <p class="section-subtitle">Real problems. Real solutions. Here's how I think.</p>
+            </div>
+
+            <div class="cases-grid">
+                <!-- Case 1: Smart Home Breach -->
+                <div class="case-card">
+                    <div class="case-header">
+                        <div class="case-number">CASE_001</div>
+                        <span class="status-badge status-solved">SOLVED</span>
+                    </div>
+                    <h3 class="case-title">The Smart Home Heist</h3>
+                    <div class="case-meta">
+                        <span>🔍 Digital Forensics</span>
+                        <span>2024</span>
+                    </div>
+                    
+                    <div class="case-preview">
+                        <p>A wealthy homeowner's smart home was compromised. The burglar unlocked the door remotely, stole valuables, and deleted all CCTV footage. Or so they thought.</p>
+                    </div>
+                    
+                    <button class="case-expand-btn" onclick="toggleCase(1)">
+                        <span>READ THE INVESTIGATION</span>
+                    </button>
+                    
+                    <div class="case-details" id="case1">
+                        <div class="case-story">
+                            <h4>The Scenario</h4>
+                            <p>Picture this: You come home to find your front door unlocked, valuables missing, and your security camera footage wiped clean. This is where I came in.</p>
+                            
+                            <h4>The Investigation</h4>
+                            <p>Data doesn't just disappear — it leaves traces. I examined the victim's phone and discovered public WiFi network logs showing suspicious connection patterns.</p>
+                            
+                            <div class="case-finding">
+                                <strong>Key Discovery:</strong> The attacker compromised the phone via public WiFi, intercepted Alexa commands and door credentials, then "deleted" CCTV footage. Using Autopsy and RegRipper, I recovered the footage from unallocated disk space.
+                            </div>
+                            
+                            <h4>The Outcome</h4>
+                            <p>I traced the complete attack chain from WiFi compromise to credential theft. The evidence showed exactly what happened—crucial for both prosecution and prevention.</p>
+                            
+                            <div class="case-tools">
+                                <span>Autopsy</span>
+                                <span>RegRipper</span>
+                                <span>FTK Imager</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case 2: Privacy ML -->
+                <div class="case-card">
+                    <div class="case-header">
+                        <div class="case-number">CASE_002</div>
+                        <span class="status-badge status-solved">SOLVED</span>
+                    </div>
+                    <h3 class="case-title">Privacy-Preserving Medical AI</h3>
+                    <div class="case-meta">
+                        <span>🧠 ML + Security</span>
+                        <span>2024</span>
+                    </div>
+                    
+                    <div class="case-preview">
+                        <p>Medical AI needs patient data to learn, but showing that data violates privacy. I found a way to train AI without ever "seeing" the actual X-rays.</p>
+                    </div>
+                    
+                    <button class="case-expand-btn" onclick="toggleCase(2)">
+                        <span>READ THE STORY</span>
+                    </button>
+                    
+                    <div class="case-details" id="case2">
+                        <div class="case-story">
+                            <h4>The Problem</h4>
+                            <p>Healthcare AI needs X-rays to detect pneumonia, but medical images contain sensitive patient data. Better AI requires more data, but more data means more privacy risk.</p>
+                            
+                            <h4>The Innovation</h4>
+                            <p>I developed a novel approach using spectrograms—converting X-rays into heat maps that capture diagnostic patterns while removing identifying features.</p>
+                            
+                            <div class="case-finding">
+                                <strong>Results:</strong> 97% accuracy while maintaining 100% privacy. Better privacy led to better accuracy by removing "noise" from irrelevant image details.
+                            </div>
+                            
+                            <h4>Recognition</h4>
+                            <p>Gained attention from healthcare investors across India for solving a real problem blocking AI adoption in medicine.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security Challenge -->
+    <section id="challenge" class="challenge-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">[03]</span>
+                <h2 class="section-title">BREACH INVESTIGATION CHALLENGE</h2>
+                <p class="section-subtitle">Think like a SOC analyst. Can you spot the threat?</p>
+            </div>
+
+            <div class="challenge-container">
+                <div class="challenge-intro" id="challengeIntro">
+                    <h3>Your Mission</h3>
+                    <p>You're monitoring network traffic. An alert fired. Identify the malicious activity in the logs.</p>
+                    <button class="btn btn-primary" onclick="startChallenge()">START CHALLENGE</button>
+                </div>
+
+                <div class="challenge-game" id="challengeGame" style="display: none;">
+                    <div class="log-viewer">
+                        <div class="log-header">network_traffic.log</div>
+                        <div class="log-content" id="logContent"></div>
+                    </div>
+                    <div class="challenge-options" id="challengeOptions"></div>
+                </div>
+
+                <div class="challenge-result" id="challengeResult" style="display: none;"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">[04]</span>
+                <h2 class="section-title">TECHNICAL ARSENAL</h2>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>🛡️ SOC Operations</h3>
+                    <div class="skill-item">
+                        <span>SIEM (Splunk)</span>
+                        <div class="skill-bar"><div class="skill-progress" style="--progress: 85%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Log Analysis</span>
+                        <div class="skill-bar"><div class="skill-progress" style="--progress: 90%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Incident Response</span>
+                        <div class="skill-bar"><div class="skill-progress" style="--progress: 80%"></div></div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>🔍 Forensics</h3>
+                    <div class="skill-item">
+                        <span>Autopsy</span>
+                        <div class="skill-bar"><div class="skill-progress" style="--progress: 88%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span>RegRipper</span>
+                        <div class="skill-bar"><div class="skill-progress" style="--progress: 82%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Evidence Collection</span>
+                        <div class="skill-bar"><div class="skill-progress" style="--progress: 85%"></div></div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>⚡ Automation</h3>
+                    <div class="skill-item">
+                        <span>Python</span>
+                        <div class="skill-bar"><div class="skill-progress" style="--progress: 85%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Bash</span>
+                        <div class="skill-bar"><div class="skill-progress" style="--progress: 75%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Security Scripts</span>
+                        <div class="skill-bar"><div class="skill-progress" style="--progress: 80%"></div></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="certifications">
+                <h3>Certifications</h3>
+                <div class="cert-grid">
+                    <div class="cert-card">
+                        <h4>CompTIA Security+</h4>
+                        <p>Security Fundamentals</p>
+                    </div>
+                    <div class="cert-card">
+                        <h4>AWS Cloud Practitioner</h4>
+                        <p>Cloud Security</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">[05]</span>
+                <h2 class="section-title">LET'S CONNECT</h2>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <h3>Email</h3>
+                    <a href="mailto:sreekarreddy369@gmail.com">sreekarreddy369@gmail.com</a>
+                </div>
+                <div class="contact-card">
+                    <h3>LinkedIn</h3>
+                    <a href="https://www.linkedin.com/in/sai-sreekar-reddy-boyapally/" target="_blank">Connect</a>
+                </div>
+                <div class="contact-card">
+                    <h3>GitHub</h3>
+                    <a href="https://github.com/Sreekar177" target="_blank">View Code</a>
+                </div>
+                <div class="contact-card">
+                    <h3>Location</h3>
+                    <p>Charlotte, NC</p>
+                </div>
+            </div>
+
+            <div class="availability">
+                <span class="status-pulse"></span>
+                <span>ACTIVELY SEEKING SOC ANALYST ROLES - Graduating May 2026</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span id="currentYear"></span> Sai Sreekar Reddy Boyapally</p>
+            <p>Built with code, secured with purpose</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
